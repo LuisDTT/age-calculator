@@ -1,0 +1,96 @@
+.age-calc__form {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  padding-bottom: 30px;
+  position: relative;
+}
+
+@media (max-width: 285px) {
+  .age-calc__form {
+    flex-wrap: wrap;
+  }
+}
+
+.age-calc__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 130px;
+}
+
+.age-calc__box-lbl {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: hsl(0, 1%, 44%);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.age-calc__box-input {
+  width: 80%;
+  margin: 5px 0;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 94%);
+}
+.age-calc__box-input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+  caret-color: hsl(259, 100%, 65%);
+}
+
+.age-calc__box-txt-err {
+  font-size: 9px;
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+}
+
+.age-calc__btn-box {
+  height: 56px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -28px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .age-calc__btn-box {
+    justify-content: end;
+  }
+}
+
+.age-calc__btn {
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 56px;
+}
+
+.age-calc__btn:hover {
+  cursor: pointer;
+}
+
+.age-calc__btn-icon {
+  padding: 30px;
+  height: 27px;
+  width: 27px;
+  background-color: hsl(259, 100%, 65%);
+}
+
+.input-error {
+  border: 1px solid hsl(0, 100%, 67%);
+}
+
+.title-error {
+  color: hsl(0, 100%, 67%);
+}

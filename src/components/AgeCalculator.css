@@ -1,0 +1,85 @@
+/* Para eliminar las flechas en navegadores basados en WebKit */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Para eliminar las flechas en navegadores basados en Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Para eliminar las flechas en navegadores basados en Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.age-calc-container {
+  background: hsl(0, 0%, 100%);
+  margin: 150px 20px auto 20px;
+  border-radius: 20px 20px 70px 20px;
+  -webkit-border-radius: 20px 20px 70px 20px;
+  -moz-border-radius: 20px 20px 70px 20px;
+  -ms-border-radius: 20px 20px 70px 20px;
+  -o-border-radius: 20px 20px 70px 20px;
+  padding: 25px;
+  width: 100%;
+  max-width: 550px;
+}
+
+.show-age-calc {
+  margin-top: 35px;
+}
+
+.show-age-calc__info {
+  margin-top: 30px;
+}
+
+.show-age-calc__info-txt--accent {
+  color: hsl(259, 100%, 65%);
+  margin-right: 5px;
+}
+
+.show-age-calc__info-txt {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 8px 0;
+  color: hsl(0, 0%, 8%);
+}
+
+@media (min-width: 600px) {
+  .age-calc-container {
+    border-radius: 20px 20px 150px 20px;
+    padding: 40px;
+    margin: 0 20px;
+    -webkit-border-radius: 20px 20px 150px 20px;
+    -moz-border-radius: 20px 20px 150px 20px;
+    -ms-border-radius: 20px 20px 150px 20px;
+    -o-border-radius: 20px 20px 150px 20px;
+  }
+  .show-age-calc {
+    margin-top: 25px;
+  }
+
+  
+
+  .show-age-calc__icon {
+    margin-top: -35px;
+  }
+
+  .show-age-calc__icon-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .show-age-calc__info-txt {
+    font-size: 72px;
+  }
+
+  
+}
